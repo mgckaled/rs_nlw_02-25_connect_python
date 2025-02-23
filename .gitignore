@@ -42,3 +42,6 @@ logs/
 
 # Ignore environment variables file
 .env
+
+# personal notes
+notes.md
