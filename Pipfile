@@ -3,8 +3,18 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[scripts]
+server = "python run.py"
+lint = "pylint --rcfile=.pylintrc src/"
+lint-report = "pylint --rcfile=.pylintrc --report=y src/"
+test = "pytest"
+test-print = "pytest -s -v"
+test-list = "pytest -s -vv"
+
 [packages]
 pytest = "*"
+flask = "*"
+pylint = "*"
 
 [dev-packages]
 
