@@ -22,7 +22,7 @@ class SubscribersCreator:
             subscriber_email, evento_id
         )
         if response:
-            raise Exception("Subscriber Already Exists!")  # noqa
+            raise Exception("Subscriber Already Exists!")
 
     def __insert_sub(self, subscriber_info: dict) -> None:
         self.__subs_repo.insert(subscriber_info)

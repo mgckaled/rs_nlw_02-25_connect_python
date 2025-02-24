@@ -19,7 +19,7 @@ class EventsCreator:
     def __check_event(self, event_name: str) -> None:
         response = self.__events_repo.select_event(event_name)
         if response:
-            raise Exception("Event Already Exists!")  # noqa
+            raise Exception("Event Already Exists!")
 
     def __insert_event(self, event_name: str) -> None:
         self.__events_repo.insert(event_name)
