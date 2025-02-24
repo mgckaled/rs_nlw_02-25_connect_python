@@ -19,8 +19,7 @@ class SubscribersCreator:
 
     def __check_sub(self, subscriber_email: str, evento_id: int) -> None:
         response = self.__subs_repo.select_subscriber(
-            subscriber_email, evento_id
-        )
+            subscriber_email, evento_id)
         if response:
             raise Exception("Subscriber Already Exists!")
 
