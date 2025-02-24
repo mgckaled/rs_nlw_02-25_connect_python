@@ -17,6 +17,7 @@ flask = "*"
 pylint = "*"
 sqlalchemy = "*"
 colorama = "*"
+cerberus = "*"
 
 [dev-packages]
 
